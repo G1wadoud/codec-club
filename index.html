@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Codec Club - Smooth Tech Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="brand">
+    <img class="logo" src="assets/logo.png" alt="Codec Club Logo">
+    <div class="title">Codec Club</div>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#join">Join</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<canvas id="particles"></canvas>
+
+<section id="home" class="section">
+  <div class="inner hero-inner" data-reveal style="display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1200px;margin:0 auto;">
+    <div class="hero-content" style="flex:1;">
+      <h1 class="hero-title">Codec Club</h1>
+      <p class="hero-sub">Where technology meets creativity. Join students building projects, learning together, and pushing the boundaries of what's possible with code.</p>
+      <div class="cta" style="margin-top:20px;display:flex;gap:12px;">
+        <button class="btn" onclick="location.href='#join'">Join Now</button>
+        <button class="btn ghost" onclick="location.href='#events'">See Events</button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="inner about-inner" data-reveal>
+    <h2>About Codec Club</h2>
+    <p>Codec Club is a student-run tech community focused on hands-on learning, team projects, and events. We host workshops, hackathons, and mentoring sessions to help members grow from beginners into skilled developers.</p>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="inner" data-reveal>
+    <h2>What We Offer</h2>
+    <div class="grid">
+      <div class="card" data-reveal>
+        <h3>💻 Workshops</h3>
+        <p>Interactive coding sessions covering web, mobile, AI, and more. Hands-on exercises and real mentors.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h3>⚡ Hackathons</h3>
+        <p>Team challenges to design, build, and present projects within limited time — great for portfolios.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h3>🌐 Tech Talks</h3>
+        <p>Guest speakers from industry and research share experience, career tips, and cutting-edge tech trends.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h3>🚀 Mentorship</h3>
+        <p>Pairing beginners with experienced members for project guidance and career advice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="events" class="section">
+  <div class="inner" data-reveal>
+    <h2>Events & Workshops</h2>
+    <p style="color:#bfcfd9">Upcoming and recent events organized by Codec Club.</p>
+    <div class="events-wrap">
+      <div class="event-card" data-reveal>
+        <img src="assets/event.jpg" alt="Event image">
+        <div class="body">
+          <h4>UI UX Workshop</h4>
+          <p>A hands-on workshop teaching UI, UX and Design fundamentals.</p>
+        </div>
+      </div>
+      <div class="event-card" data-reveal>
+        <img src="assets/workshop.jpg" alt="Workshop image">
+        <div class="body">
+          <h4>Intro to Web Dev</h4>
+          <p>A hands-on workshop teaching HTML, CSS, and JavaScript fundamentals.</p>
+        </div>
+      </div>
+      <div class="event-card" data-reveal>
+        <img src="assets/team.jpg" alt="Team image">
+        <div class="body">
+          <h4>Open Day Event </h4>
+          <p>Join us for coding challenges, quizzes, workshops, and exciting tech events!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="section">
+  <div class="inner" data-reveal>
+    <h2>Join Codec Club</h2>
+    <p>Sign up to receive updates and invitations to events.</p>
+    <div class="form">
+      <form onsubmit="event.preventDefault(); alert('Thanks! Join form submitted (local demo).')">
+        <input type="text" placeholder="Full name" required>
+        <input type="email" placeholder="Email address" required>
+        <textarea rows="4" placeholder="Tell us your skills or interests"></textarea>
+        <button class="btn" style="width:100%;margin-top:12px">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section" style="background:linear-gradient(180deg,#05050a,#0a0a15);display:flex;align-items:center;justify-content:center;padding:80px 24px;">
+  <div class="inner" data-reveal style="display:flex;gap:40px;flex-wrap:wrap;justify-content:center;align-items:center;max-width:1000px;">
+    <div style="flex:1;min-width:280px;">
+      <h2>Contact</h2>
+      <p style="line-height:1.6;">Email: <a href='mailto:codecclub@univ-tech.edu' style='color:#00e5ff'>codecclub@univ-tech.edu</a><br>
+      Instagram: <a href='#' style='color:#00e5ff'>@codecclub_official</a><br>
+      Phone: <span style='color:#00e5ff'>+123 456 7890</span></p>
+    </div>
+    <div style="flex:1;min-width:280px;background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(0,229,255,0.1)">
+      <form onsubmit="event.preventDefault(); alert('Thanks! Message sent (demo)')">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button class="btn" style="width:100%;margin-top:12px">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 unofficial Codec Club • Designed by HADDED ABDELWADOUD
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
